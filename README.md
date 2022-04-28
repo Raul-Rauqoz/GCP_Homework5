@@ -15,16 +15,13 @@
     gcloud sql instances describe rauqozsql
 
 # Cloud Function
-
-## Function
-mkdir function
-cd function
-touch index.js
-npm init
-npm install escape-html
-npm install @google-cloud/functions-framework
-npm install mysql
-npm install dotenv
-
 ## Comando para despligue de la funcion
-gcloud functions deploy userHttp --runtime nodejs16 --trigger-http --allow-unauthenticated
+
+create folder 'function'
+Cd function
+npm init -y
+npm i @google-cloud/functions-framework mysql
+create index.js and code
+open terminal in folder 'function'
+
+    gcloud functions deploy rauqozfunc --runtime nodejs16 --trigger-http --allow-unauthenticated
