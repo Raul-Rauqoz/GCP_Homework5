@@ -17,11 +17,12 @@
 # Cloud Function
 ## Comando para despligue de la funcion
 
-create folder 'function'
-Cd function
-npm init -y
-npm i @google-cloud/functions-framework mysql
-create index.js and code
-open terminal in folder 'function'
+    1. create folder 'function'
+    2. Cd function
+    3. npm init -y
+    4. npm i @google-cloud/functions-framework mysql
+    5. create index.js and code
+    6. open terminal in folder 'function'
 
     gcloud functions deploy rauqozfunc --runtime nodejs16 --trigger-http --allow-unauthenticated
+
